@@ -1,0 +1,26 @@
+{
+  "name": "project-react-3-hongjungkim-dev",
+  "version": "0.0.1",
+  "description": "project-react-3-hongjungkim-dev",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HongJungKim-dev/project-react-3-HongJungKim-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HongJungKim-dev/project-react-3-HongJungKim-dev/issues"
+  },
+  "homepage": "https://github.com/HongJungKim-dev/project-react-3-HongJungKim-dev#readme"
+}
