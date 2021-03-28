@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -8,6 +8,9 @@ module.exports = {
         use: 'babel-loader',
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     historyApiFallback: {
