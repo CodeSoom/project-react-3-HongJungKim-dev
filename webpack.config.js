@@ -1,13 +1,16 @@
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     historyApiFallback: {
