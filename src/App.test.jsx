@@ -2,12 +2,34 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
+import { MemoryRouter } from 'react-router-dom';
 import App from './App';
 
-describe('App', () => {
-  it('renders App page', () => {
-    const { queryByText } = render(<App />);
+function renderApp({ path }) {
+  return render((
+    <MemoryRouter initialEntries={[path]}>
+      <App />
+    </MemoryRouter>
+  ));
+}
 
-    expect(queryByText('Hello, hong jung')).not.toBeNull();
+describe('App', () => {
+  it('renders home page', () => {
+    const { queryByText } = renderApp({ path: '/' });
+
+    expect(queryByText('뭐먹지?')).not.toBeNull();
+    expect(queryByText('start')).not.toBeNull();
+  });
+
+  it('renders start page', () => {
+    const { queryByText } = renderApp({ path: '/start' });
+
+    expect(queryByText('questions')).not.toBeNull();
+  });
+
+  it('renders result page', () => {
+    const { queryByText } = renderApp({ path: '/result' });
+
+    expect(queryByText('result')).not.toBeNull();
   });
 });
