@@ -3,6 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { MemoryRouter } from 'react-router-dom';
+
 import App from './App';
 
 function renderApp({ path }) {
@@ -22,7 +23,7 @@ describe('App', () => {
   });
 
   it('renders start page', () => {
-    const { queryByText } = renderApp({ path: '/start' });
+    const { queryByText } = renderApp({ path: '/question' });
 
     expect(queryByText('questions')).not.toBeNull();
   });
