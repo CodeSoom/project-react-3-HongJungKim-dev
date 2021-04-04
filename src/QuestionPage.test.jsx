@@ -18,8 +18,8 @@ describe('QuestionPage', () => {
     const { queryByText } = renderQuestionPage();
 
     expect(queryByText('questions')).not.toBeNull();
-    expect(queryByText('분류를 선택하세요.')).not.toBeNull();
-    expect(queryByText('동남아식')).not.toBeNull();
+    expect(queryByText('분류를 선택하세요')).not.toBeNull();
+    expect(queryByText('한식')).not.toBeNull();
   });
 
   it('link to previous or next page', () => {
