@@ -13,7 +13,6 @@ export default function QuestionPage() {
 
   const [state, setState] = useState({
     id: 0,
-    tests: [...qnas],
     selectedAnswerIds: [],
     prevResults: [...foods],
     curResults: [],
@@ -22,10 +21,10 @@ export default function QuestionPage() {
 
   const {
     id, selectedAnswerIds,
-    prevResults, curResults, tests,
+    prevResults, curResults,
   } = state;
 
-  const { contents } = tests[id];
+  const { contents } = qnas[id];
 
   function handleClickNext() {
     setState({
