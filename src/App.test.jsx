@@ -18,14 +18,15 @@ describe('App', () => {
   it('renders home page', () => {
     const { queryByText } = renderApp({ path: '/' });
 
-    expect(queryByText('뭐먹지?')).not.toBeNull();
-    expect(queryByText('start')).not.toBeNull();
+    expect(queryByText('MOMOJJI')).not.toBeNull();
+    expect(queryByText('이런 메뉴 어때요?(랜덤추천)')).not.toBeNull();
+    expect(queryByText('내가 먹고싶은건..(선택형 추천)')).not.toBeNull();
   });
 
-  it('renders start page', () => {
+  it('renders question page', () => {
     const { queryByText } = renderApp({ path: '/question' });
 
-    expect(queryByText('questions')).not.toBeNull();
+    expect(queryByText('어느나라 음식?')).not.toBeNull();
   });
 
   it('renders result page', () => {

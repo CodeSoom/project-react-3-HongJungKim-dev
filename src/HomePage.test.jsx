@@ -14,7 +14,7 @@ describe('HomePage', () => {
       </MemoryRouter>
     ));
 
-    expect(queryByText('start')).not.toBeNull();
-    expect(queryByText('오늘 먹을 메뉴를 추천해드립니다')).not.toBeNull();
+    expect(queryByText('이런 메뉴 어때요?(랜덤추천)')).not.toBeNull();
+    expect(queryByText('내가 먹고싶은건..(선택형 추천)')).not.toBeNull();
   });
 });

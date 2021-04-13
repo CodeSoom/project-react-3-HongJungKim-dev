@@ -1,28 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import Question from './Question';
+import QuestionContainer from './QuestionContainer';
 
-import qna from './data/qna';
+import qnas from './data/qnas';
+import foods from './data/foods';
+import NextButtonsContainer from './NextButtonsContainer';
 
 export default function QuestionPage() {
-  const id = 0;
-  const { contents } = qna[id];
+  const ANY_CHOICE = 6;
 
-  function handleClick() {
-    // Todo : id를 1씩 증가시킵니다.
+  const [state, setState] = useState({
+    id: 0,
+    tests: [...qnas],
+    selectedAnswerIds: [],
+    prevResults: [...foods],
+    curResults: [],
+    finalResultIdsSet: [],
+  });
+
+  const {
+    id, selectedAnswerIds,
+    prevResults, curResults, tests,
+  } = state;
+
+  const { contents } = tests[id];
+
+  function handleClickNext() {
+    setState({
+      ...state,
+      id: id + 1,
+      selectedAnswerIds: [],
+      prevResults: [...curResults],
+      curResults: [],
+      finalResultIdsSet: [...new Set(curResults.map((result) => result.id))],
+    });
+  }
+
+  function handleClickAnswer(clickedId) {
+    const to = [0, 0, clickedId - 1];
+    const allButtons = [1, 2, 3, 4, 5];
+
+    if (clickedId === ANY_CHOICE) {
+      setState({
+        ...state,
+        curResults: [...curResults,
+          ...prevResults.filter((result) => allButtons.map(
+            (button) => button === result.attribute[id][to[id]],
+          ))],
+        selectedAnswerIds: [...new Set([...selectedAnswerIds, ...allButtons])],
+      });
+      return;
+    }
+
+    setState({
+      ...state,
+      curResults: [...curResults,
+        ...prevResults.filter((result) => result.attribute[id][to[id]] === clickedId)],
+      selectedAnswerIds: [...new Set([...selectedAnswerIds, clickedId])],
+    });
   }
 
   return (
     <>
-      <h1>questions</h1>
-      <Question
+      <QuestionContainer
         contents={contents}
-        onClick={handleClick}
+        handleClickAnswer={handleClickAnswer}
+        selectedAnswerIds={selectedAnswerIds}
       />
-      <h1><Link to="/">previous</Link></h1>
-      <h1><Link to="/result">next</Link></h1>
+      <NextButtonsContainer
+        pageId={id}
+        handleClickNext={handleClickNext}
+      />
+      <h1><Link to="/">이전</Link></h1>
     </>
   );
 }

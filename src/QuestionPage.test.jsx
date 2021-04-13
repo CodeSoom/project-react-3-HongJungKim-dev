@@ -6,6 +6,15 @@ import { MemoryRouter } from 'react-router-dom';
 
 import QuestionPage from './QuestionPage';
 
+const mockHistoryPush = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useHistory: () => ({
+    push: mockHistoryPush,
+  }),
+}));
+
 describe('QuestionPage', () => {
   function renderQuestionPage() {
     return render((
@@ -14,18 +23,10 @@ describe('QuestionPage', () => {
       </MemoryRouter>
     ));
   }
-  it('renders question Page', () => {
-    const { queryByText } = renderQuestionPage();
-
-    expect(queryByText('questions')).not.toBeNull();
-    expect(queryByText('분류를 선택하세요')).not.toBeNull();
-    expect(queryByText('한식')).not.toBeNull();
-  });
 
   it('link to previous or next page', () => {
     const { queryByText } = renderQuestionPage();
 
-    expect(queryByText('previous')).not.toBeNull();
-    expect(queryByText('next')).not.toBeNull();
+    expect(queryByText('이전')).not.toBeNull();
   });
 });
