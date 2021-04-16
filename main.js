@@ -214,7 +214,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router/esm/react-router.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n/* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage */ \"./src/HomePage.jsx\");\n/* harmony import */ var _QuestionPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuestionPage */ \"./src/QuestionPage.jsx\");\n/* harmony import */ var _ResultPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ResultPage */ \"./src/ResultPage.jsx\");\n/* harmony import */ var _NotFoundPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NotFoundPage */ \"./src/NotFoundPage.jsx\");\n\n\n\n\n\n\n\nfunction App() {\n  const Header = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.header({\n    textAlign: 'center',\n    '& a': {\n      color: '#FFA800',\n      textDecoration: 'none'\n    }\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {\n    to: \"/\"\n  }, \"MOMOJJI\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {\n    exact: true,\n    path: \"/\",\n    component: _HomePage__WEBPACK_IMPORTED_MODULE_2__.default\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {\n    path: \"/question\",\n    component: _QuestionPage__WEBPACK_IMPORTED_MODULE_3__.default\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {\n    path: \"/result\",\n    component: _ResultPage__WEBPACK_IMPORTED_MODULE_4__.default\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {\n    component: _NotFoundPage__WEBPACK_IMPORTED_MODULE_5__.default\n  })));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/App.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router/esm/react-router.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n/* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage */ \"./src/HomePage.jsx\");\n/* harmony import */ var _QuestionPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuestionPage */ \"./src/QuestionPage.jsx\");\n/* harmony import */ var _ResultPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ResultPage */ \"./src/ResultPage.jsx\");\n/* harmony import */ var _NotFoundPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NotFoundPage */ \"./src/NotFoundPage.jsx\");\n/* harmony import */ var _Wrapper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Wrapper */ \"./src/Wrapper.jsx\");\n\n\n\n\n\n\n\n\nfunction App() {\n  const Header = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.header({\n    display: 'flex',\n    justifyContent: 'center',\n    alignItems: 'center',\n    '& a': {\n      color: '#FFA800',\n      textDecoration: 'none'\n    }\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Link, {\n    to: \"/\"\n  }, \"MOMOJJI\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {\n    exact: true,\n    path: \"/\",\n    component: _HomePage__WEBPACK_IMPORTED_MODULE_2__.default\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {\n    path: \"/question\",\n    component: _QuestionPage__WEBPACK_IMPORTED_MODULE_3__.default\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {\n    path: \"/result\",\n    component: _ResultPage__WEBPACK_IMPORTED_MODULE_4__.default\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {\n    component: _NotFoundPage__WEBPACK_IMPORTED_MODULE_5__.default\n  })));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/App.jsx?");
 
 /***/ }),
 
@@ -225,7 +225,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ HomePage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\n\nfunction HomePage() {\n  const Header = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.header({\n    textAlign: 'center',\n    '& a': {\n      color: '#FFFFFF',\n      textDecoration: 'none',\n      backgroundColor: '#FFA800',\n      borderRadius: '20px',\n      boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',\n      position: 'absolute',\n      width: '140px',\n      height: '296px',\n      left: '195px',\n      top: '291px'\n    }\n  });\n  const Header2 = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.header({\n    textAlign: 'center',\n    '& h1': {\n      color: '#FFFFFF',\n      textDecoration: 'none',\n      backgroundColor: '#FFA800',\n      borderRadius: '20px',\n      boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',\n      width: '140px',\n      height: '296px',\n      left: '40px',\n      top: '291px'\n    }\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Header2, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"\\uC774\\uB7F0 \\uBA54\\uB274 \\uC5B4\\uB54C\\uC694?(\\uB79C\\uB364\\uCD94\\uCC9C)\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {\n    to: \"/question\"\n  }, \"\\uB0B4\\uAC00 \\uBA39\\uACE0\\uC2F6\\uC740\\uAC74..(\\uC120\\uD0DD\\uD615 \\uCD94\\uCC9C)\"))));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/HomePage.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ HomePage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n/* harmony import */ var _icons_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icons/icons */ \"./src/icons/icons.js\");\n\n\n\n\nconst HomeWrapper = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.div({\n  display: 'flex',\n  justifyContent: 'center',\n  alignItems: 'center',\n  width: '100%',\n  height: '100%'\n});\nfunction HomePage() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HomeWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", {\n    src: _icons_icons__WEBPACK_IMPORTED_MODULE_2__.default[0][0],\n    alt: \"\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {\n    to: \"/question\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", {\n    src: _icons_icons__WEBPACK_IMPORTED_MODULE_2__.default[0][1],\n    alt: \"\"\n  }))));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/HomePage.jsx?");
 
 /***/ }),
 
@@ -258,7 +258,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ QuestionContainer)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n\n\nfunction QuestionContainer({\n  contents,\n  selectedAnswerIds,\n  handleClickAnswer\n}) {\n  const {\n    question,\n    answers\n  } = contents;\n  const Button = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.button({\n    all: 'unset',\n    backgroundColor: '#EAEAEA',\n    borderRadius: '20px'\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, question), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, answers.map(({\n    id,\n    description\n  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Button, {\n    key: id,\n    type: \"button\",\n    onClick: () => handleClickAnswer(id)\n  }, description, selectedAnswerIds.map(selectedId => `${id === selectedId ? '(V)' : ''}`)))));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/QuestionContainer.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ QuestionContainer)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n/* harmony import */ var _icons_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icons/icons */ \"./src/icons/icons.js\");\n\n\n\nfunction QuestionContainer({\n  pageId,\n  contents,\n  selectedAnswerIds,\n  handleClickAnswer\n}) {\n  const {\n    answers\n  } = contents;\n  const Button = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.button({\n    fontSize: '1em',\n    fontWeight: 'bold',\n    borderColor: 'transparent',\n    backgroundColor: 'transparent',\n    borderRadius: '20px',\n    boxShadow: '5px 5px 5px 5px #F4F4F4'\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, answers.map(({\n    id,\n    description\n  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Button, {\n    key: id,\n    type: \"button\",\n    onClick: () => handleClickAnswer(id)\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", {\n    src: _icons_icons__WEBPACK_IMPORTED_MODULE_2__.default[pageId + 1][id - 1],\n    alt: \"\"\n  }), selectedAnswerIds.map(selectedId => `${id === selectedId ? '(V)' : ''}`))));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/QuestionContainer.jsx?");
 
 /***/ }),
 
@@ -269,7 +269,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ QuestionPage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _QuestionContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuestionContainer */ \"./src/QuestionContainer.jsx\");\n/* harmony import */ var _data_qnas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data/qnas */ \"./src/data/qnas.js\");\n/* harmony import */ var _data_foods__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data/foods */ \"./src/data/foods.js\");\n/* harmony import */ var _NextButtonsContainer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NextButtonsContainer */ \"./src/NextButtonsContainer.jsx\");\n\n\n\n\n\n\nfunction QuestionPage() {\n  const ANY_CHOICE = 6;\n  const [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\n    id: 0,\n    selectedAnswerIds: [],\n    prevResults: [..._data_foods__WEBPACK_IMPORTED_MODULE_3__.default],\n    curResults: [],\n    finalResultIdsSet: []\n  });\n  const {\n    id,\n    selectedAnswerIds,\n    prevResults,\n    curResults\n  } = state;\n  const {\n    contents\n  } = _data_qnas__WEBPACK_IMPORTED_MODULE_2__.default[id];\n\n  function handleClickNext() {\n    setState({ ...state,\n      id: id + 1,\n      selectedAnswerIds: [],\n      prevResults: [...curResults],\n      curResults: [],\n      finalResultIdsSet: [...new Set(curResults.map(result => result.id))]\n    });\n  }\n\n  function handleClickAnswer(clickedId) {\n    const to = [0, 0, clickedId - 1];\n    const allButtons = [1, 2, 3, 4, 5];\n\n    if (clickedId === ANY_CHOICE) {\n      setState({ ...state,\n        curResults: [...curResults, ...prevResults.filter(result => allButtons.map(button => button === result.attribute[id][to[id]]))],\n        selectedAnswerIds: [...new Set([...selectedAnswerIds, ...allButtons])]\n      });\n      return;\n    }\n\n    setState({ ...state,\n      curResults: [...curResults, ...prevResults.filter(result => result.attribute[id][to[id]] === clickedId)],\n      selectedAnswerIds: [...new Set([...selectedAnswerIds, clickedId])]\n    });\n  }\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionContainer__WEBPACK_IMPORTED_MODULE_1__.default, {\n    contents: contents,\n    handleClickAnswer: handleClickAnswer,\n    selectedAnswerIds: selectedAnswerIds\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NextButtonsContainer__WEBPACK_IMPORTED_MODULE_4__.default, {\n    pageId: id,\n    handleClickNext: handleClickNext\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {\n    to: \"/\"\n  }, \"\\uC774\\uC804\")));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/QuestionPage.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ QuestionPage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n/* harmony import */ var _QuestionContainer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./QuestionContainer */ \"./src/QuestionContainer.jsx\");\n/* harmony import */ var _data_qnas__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data/qnas */ \"./src/data/qnas.js\");\n/* harmony import */ var _data_foods__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data/foods */ \"./src/data/foods.js\");\n/* harmony import */ var _NextButtonsContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NextButtonsContainer */ \"./src/NextButtonsContainer.jsx\");\n/* harmony import */ var _Wrapper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Wrapper */ \"./src/Wrapper.jsx\");\n\n\n\n\n\n\n\n\nconst GridDiv = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__.default.div({\n  display: 'grid',\n  gridTemplateColumns: '141px 141px',\n  gridTemplateRows: '111px 111px 111px',\n  rowGap: '1em',\n  columnGap: '1em'\n});\nfunction QuestionPage() {\n  const ANY_CHOICE = 6;\n  const [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\n    id: 0,\n    selectedAnswerIds: [],\n    prevResults: [..._data_foods__WEBPACK_IMPORTED_MODULE_4__.default],\n    curResults: [],\n    finalResultIdsSet: []\n  });\n  const {\n    id,\n    selectedAnswerIds,\n    prevResults,\n    curResults\n  } = state;\n  const {\n    contents\n  } = _data_qnas__WEBPACK_IMPORTED_MODULE_3__.default[id];\n  const {\n    question\n  } = contents;\n\n  function handleClickNext() {\n    setState({ ...state,\n      id: id + 1,\n      selectedAnswerIds: [],\n      prevResults: [...curResults],\n      curResults: [],\n      finalResultIdsSet: [...new Set(curResults.map(result => result.id))]\n    });\n  }\n\n  function handleClickAnswer(clickedId) {\n    const to = [0, 0, clickedId - 1];\n    const allButtons = [1, 2, 3, 4, 5];\n\n    if (clickedId === ANY_CHOICE) {\n      setState({ ...state,\n        curResults: [...curResults, ...prevResults.filter(result => allButtons.map(button => button === result.attribute[id][to[id]]))],\n        selectedAnswerIds: [...new Set([...selectedAnswerIds, ...allButtons])]\n      });\n      return;\n    }\n\n    setState({ ...state,\n      curResults: [...curResults, ...prevResults.filter(result => result.attribute[id][to[id]] === clickedId)],\n      selectedAnswerIds: [...new Set([...selectedAnswerIds, clickedId])]\n    });\n  }\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, question), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(GridDiv, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionContainer__WEBPACK_IMPORTED_MODULE_2__.default, {\n    pageId: id,\n    contents: contents,\n    handleClickAnswer: handleClickAnswer,\n    selectedAnswerIds: selectedAnswerIds\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NextButtonsContainer__WEBPACK_IMPORTED_MODULE_5__.default, {\n    pageId: id,\n    handleClickNext: handleClickNext\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Link, {\n    to: \"/\"\n  }, \"\\uC774\\uC804\")));\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/QuestionPage.jsx?");
 
 /***/ }),
 
@@ -281,6 +281,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ResultPage)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction ResultPage() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", null, \"result\");\n}\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/ResultPage.jsx?");
+
+/***/ }),
+
+/***/ "./src/Wrapper.jsx":
+/*!*************************!*\
+  !*** ./src/Wrapper.jsx ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled */ \"./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js\");\n\nconst Wrapper = _emotion_styled__WEBPACK_IMPORTED_MODULE_0__.default.div({\n  display: 'flex',\n  justifyContent: 'center',\n  alignItems: 'center',\n  flexDirection: 'column',\n  width: '100%',\n  height: '100%'\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Wrapper);\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/Wrapper.jsx?");
 
 /***/ }),
 
@@ -302,7 +313,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst qnas = [{\n  id: 1,\n  contents: {\n    question: '어느나라 음식?',\n    answers: [{\n      id: 1,\n      description: '양식'\n    }, {\n      id: 2,\n      description: '중식'\n    }, {\n      id: 3,\n      description: '한식'\n    }, {\n      id: 4,\n      description: '동남아'\n    }, {\n      id: 5,\n      description: '일식'\n    }, {\n      id: 6,\n      description: '아무거나'\n    }]\n  }\n}, {\n  id: 2,\n  contents: {\n    question: '재료는?',\n    answers: [{\n      id: 1,\n      description: '밥'\n    }, {\n      id: 2,\n      description: '빵/튀김/전'\n    }, {\n      id: 3,\n      description: '면'\n    }, {\n      id: 4,\n      description: '떡/분식'\n    }, {\n      id: 5,\n      description: '육류/생선'\n    }, {\n      id: 6,\n      description: '아무거나'\n    }]\n  }\n}, {\n  id: 3,\n  contents: {\n    question: '맛은?',\n    answers: [{\n      id: 1,\n      description: '혈관 살찌는 느끼한 맛'\n    }, {\n      id: 2,\n      description: '내장 파괴 매운맛'\n    }, {\n      id: 3,\n      description: '뜨끈~한 맛'\n    }, {\n      id: 4,\n      description: '달달/단짠'\n    }, {\n      id: 5,\n      description: '상큼/시원한 맛'\n    }, {\n      id: 6,\n      description: '아무거나'\n    }]\n  }\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (qnas);\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/data/qnas.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst qnas = [{\n  id: 1,\n  contents: {\n    question: '어느나라 음식?',\n    answers: [{\n      id: 1,\n      description: '양식'\n    }, {\n      id: 2,\n      description: '중식'\n    }, {\n      id: 3,\n      description: '한식'\n    }, {\n      id: 4,\n      description: '동남아'\n    }, {\n      id: 5,\n      description: '일식'\n    }, {\n      id: 6,\n      description: '모두'\n    }]\n  }\n}, {\n  id: 2,\n  contents: {\n    question: '재료는?',\n    answers: [{\n      id: 1,\n      description: '밥'\n    }, {\n      id: 2,\n      description: '빵/튀김/전'\n    }, {\n      id: 3,\n      description: '면'\n    }, {\n      id: 4,\n      description: '떡/분식'\n    }, {\n      id: 5,\n      description: '육류/생선'\n    }, {\n      id: 6,\n      description: '모두'\n    }]\n  }\n}, {\n  id: 3,\n  contents: {\n    question: '맛은?',\n    answers: [{\n      id: 1,\n      description: '혈관 살찌는 느끼한 맛'\n    }, {\n      id: 2,\n      description: '내장 파괴 매운맛'\n    }, {\n      id: 3,\n      description: '뜨끈~한 맛'\n    }, {\n      id: 4,\n      description: '달달/단짠'\n    }, {\n      id: 5,\n      description: '상큼/시원한 맛'\n    }, {\n      id: 6,\n      description: '모두'\n    }]\n  }\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (qnas);\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/data/qnas.js?");
+
+/***/ }),
+
+/***/ "./src/icons/icons.js":
+/*!****************************!*\
+  !*** ./src/icons/icons.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _choice_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./choice.png */ \"./src/icons/choice.png\");\n/* harmony import */ var _random_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./random.png */ \"./src/icons/random.png\");\n/* harmony import */ var _choice101_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./choice101.png */ \"./src/icons/choice101.png\");\n/* harmony import */ var _choice102_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./choice102.png */ \"./src/icons/choice102.png\");\n/* harmony import */ var _choice103_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./choice103.png */ \"./src/icons/choice103.png\");\n/* harmony import */ var _choice104_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./choice104.png */ \"./src/icons/choice104.png\");\n/* harmony import */ var _choice105_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./choice105.png */ \"./src/icons/choice105.png\");\n/* harmony import */ var _choice106_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./choice106.png */ \"./src/icons/choice106.png\");\n/* harmony import */ var _choice201_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./choice201.png */ \"./src/icons/choice201.png\");\n/* harmony import */ var _choice202_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./choice202.png */ \"./src/icons/choice202.png\");\n/* harmony import */ var _choice203_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./choice203.png */ \"./src/icons/choice203.png\");\n/* harmony import */ var _choice204_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./choice204.png */ \"./src/icons/choice204.png\");\n/* harmony import */ var _choice205_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./choice205.png */ \"./src/icons/choice205.png\");\n/* harmony import */ var _choice301_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./choice301.png */ \"./src/icons/choice301.png\");\n/* harmony import */ var _choice302_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./choice302.png */ \"./src/icons/choice302.png\");\n/* harmony import */ var _choice303_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./choice303.png */ \"./src/icons/choice303.png\");\n/* harmony import */ var _choice304_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./choice304.png */ \"./src/icons/choice304.png\");\n/* harmony import */ var _choice305_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./choice305.png */ \"./src/icons/choice305.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst IconImg = {\n  0: [_random_png__WEBPACK_IMPORTED_MODULE_1__.default, _choice_png__WEBPACK_IMPORTED_MODULE_0__.default],\n  1: [_choice101_png__WEBPACK_IMPORTED_MODULE_2__.default, _choice102_png__WEBPACK_IMPORTED_MODULE_3__.default, _choice103_png__WEBPACK_IMPORTED_MODULE_4__.default, _choice104_png__WEBPACK_IMPORTED_MODULE_5__.default, _choice105_png__WEBPACK_IMPORTED_MODULE_6__.default, _choice106_png__WEBPACK_IMPORTED_MODULE_7__.default],\n  2: [_choice201_png__WEBPACK_IMPORTED_MODULE_8__.default, _choice202_png__WEBPACK_IMPORTED_MODULE_9__.default, _choice203_png__WEBPACK_IMPORTED_MODULE_10__.default, _choice204_png__WEBPACK_IMPORTED_MODULE_11__.default, _choice205_png__WEBPACK_IMPORTED_MODULE_12__.default, _choice106_png__WEBPACK_IMPORTED_MODULE_7__.default],\n  3: [_choice301_png__WEBPACK_IMPORTED_MODULE_13__.default, _choice302_png__WEBPACK_IMPORTED_MODULE_14__.default, _choice303_png__WEBPACK_IMPORTED_MODULE_15__.default, _choice304_png__WEBPACK_IMPORTED_MODULE_16__.default, _choice305_png__WEBPACK_IMPORTED_MODULE_17__.default, _choice106_png__WEBPACK_IMPORTED_MODULE_7__.default]\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconImg);\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/icons.js?");
 
 /***/ }),
 
@@ -314,6 +336,204 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ \"./src/App.jsx\");\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById('app'));\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/index.jsx?");
+
+/***/ }),
+
+/***/ "./src/icons/choice.png":
+/*!******************************!*\
+  !*** ./src/icons/choice.png ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"ba64a7daf7bbf00bba67e2c3620131dd.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice101.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice101.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"16ba94e596960e27877b9c7a8672294a.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice101.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice102.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice102.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"1e8bd4c2a921ea0809c640d9ec8e84db.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice102.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice103.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice103.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"c7ae93b0fe95338b5ec74d3e8861c700.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice103.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice104.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice104.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"e29a0a29947c301b3be0a4539ee9b76b.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice104.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice105.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice105.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"5a7d41224253c5788f596c97f7de1f52.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice105.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice106.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice106.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"a207a429d584f3f4a39f979290ffe88c.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice106.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice201.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice201.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"fd8ffcc8445d139b82a86298bc23b804.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice201.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice202.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice202.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"211717641ceb1efdd88d240cb73c90c2.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice202.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice203.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice203.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"b24a473b5720d3f271de63187568a9b3.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice203.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice204.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice204.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"3f03a230b106c40d7c0cdb1317b31d48.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice204.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice205.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice205.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"ad311bbda973d5f6a5bd5d0444bc6406.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice205.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice301.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice301.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"c45db798a601edd6d76bdba4cd681073.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice301.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice302.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice302.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"462e884e3a44aa8528c32701e41588a1.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice302.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice303.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice303.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"b3e8669eda4f2ef36bfcca6881d3d2f6.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice303.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice304.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice304.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"05ec9520f91f8de8fcee9bf3c7cbaa64.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice304.png?");
+
+/***/ }),
+
+/***/ "./src/icons/choice305.png":
+/*!*********************************!*\
+  !*** ./src/icons/choice305.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"bdf31b8a15cdcd437dd82f7ea1da306e.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/choice305.png?");
+
+/***/ }),
+
+/***/ "./src/icons/random.png":
+/*!******************************!*\
+  !*** ./src/icons/random.png ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"9499332d517522a680ffb6c23f089381.png\");\n\n//# sourceURL=webpack://project-react-3-hongjungkim-dev/./src/icons/random.png?");
 
 /***/ }),
 
@@ -754,6 +974,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
