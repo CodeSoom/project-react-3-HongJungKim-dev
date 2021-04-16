@@ -2,35 +2,41 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
+import IconImg from './icons/icons';
+
 export default function QuestionContainer({
-  contents, selectedAnswerIds,
+  pageId, contents, selectedAnswerIds,
   handleClickAnswer,
 }) {
-  const { question, answers } = contents;
+  const { answers } = contents;
 
   const Button = styled.button({
-    all: 'unset',
-    backgroundColor: '#EAEAEA',
+    fontSize: '1em',
+    fontWeight: 'bold',
+    borderColor: 'transparent',
+    backgroundColor: 'transparent',
     borderRadius: '20px',
+    boxShadow: '5px 5px 5px 5px #F4F4F4',
   });
 
   return (
     <>
-      <h1>{question}</h1>
-      <div>
-        {answers.map(({ id, description }) => (
-          <Button
-            key={id}
-            type="button"
-            onClick={() => handleClickAnswer(id)}
-          >
-            {description}
-            {selectedAnswerIds.map((selectedId) => (
-              `${id === selectedId ? '(V)' : ''}`
-            ))}
-          </Button>
-        ))}
-      </div>
+      {answers.map(({ id, description }) => (
+        <Button
+          key={id}
+          type="button"
+          onClick={() => handleClickAnswer(id)}
+        >
+          <span>{description}</span>
+          <img
+            src={IconImg[pageId + 1][id - 1]}
+            alt=""
+          />
+          {selectedAnswerIds.map((selectedId) => (
+            `${id === selectedId ? '(V)' : ''}`
+          ))}
+        </Button>
+      ))}
     </>
   );
 }

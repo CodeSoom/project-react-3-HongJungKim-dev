@@ -8,7 +8,7 @@ import foods from './data/foods';
 describe('slice', () => {
   describe('reducers', () => {
     describe('updateResult', () => {
-      it('update result when click next', () => {
+      it('update result', () => {
         const initialState = {
           id: 2,
           curResults: [
@@ -30,7 +30,7 @@ describe('slice', () => {
     });
 
     describe('saveAnswer', () => {
-      it('saves answer when click all buttons', () => {
+      it('saves answer when select all buttons', () => {
         const initialState = {
           id: 0,
           selectedAnswerIds: [],
@@ -46,7 +46,7 @@ describe('slice', () => {
         expect(selectedAnswerIds).toHaveLength(5);
       });
 
-      it('saves answer when click buttons', () => {
+      it('saves answer when select buttons', () => {
         const initialState = {
           id: 0,
           selectedAnswerIds: [],
