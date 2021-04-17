@@ -10,7 +10,7 @@ import { increaseResultId, pickRandom } from './slice';
 
 import get from './utils';
 
-import { FoodImg } from './assets/image';
+import { FoodImg, FoodInfo } from './assets/image';
 
 import Wrapper from './Wrapper';
 
@@ -58,15 +58,25 @@ export default function ResultPage() {
           ? (
             <>
               <h1>이런 메뉴는 어때요?</h1>
+              <img
+                src={FoodImg[randomId]}
+                alt=""
+              />
               <h1>
-                {FoodImg[randomId].name}
+                {FoodInfo[randomId].name}
               </h1>
             </>
           )
           : (
-            <h1>
-              {FoodImg[finalResultIdsSet[resultId] - 1].name}
-            </h1>
+            <>
+              <img
+                src={FoodImg[finalResultIdsSet[resultId] - 1]}
+                alt=""
+              />
+              <h1>
+                {FoodInfo[finalResultIdsSet[resultId] - 1].name}
+              </h1>
+            </>
           )
       }
       <GridDiv>

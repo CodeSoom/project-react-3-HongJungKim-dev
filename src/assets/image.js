@@ -57,7 +57,7 @@ export const IconImg = {
   ],
 };
 
-export const FoodImg = [
+export const FoodInfo = [
   {
     id: 1, name: '감바스', img: Result1,
   },
@@ -74,3 +74,11 @@ export const FoodImg = [
     id: 5, name: '나시고렝', img: Result5,
   },
 ];
+
+export const FoodImg = {
+  0: Result1,
+  1: Result2,
+  2: Result3,
+  3: Result4,
+  4: Result5,
+};
