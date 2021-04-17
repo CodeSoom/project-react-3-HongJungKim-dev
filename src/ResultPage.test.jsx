@@ -16,7 +16,7 @@ import ResultPage from './ResultPage';
 
 import { pickRandom, increaseResultId } from './slice';
 
-import { FoodImg } from './assets/image';
+import { FoodInfo } from './assets/image';
 
 jest.mock('react-redux');
 jest.mock('./assets/image');
@@ -53,7 +53,7 @@ describe('ResultPage', () => {
     const { queryByText, queryAllByText } = renderResultPage();
 
     expect(queryByText('이런 메뉴는 어때요?')).not.toBeNull();
-    expect(queryAllByText(FoodImg[0].name)).not.toBeNull();
+    expect(queryAllByText(FoodInfo[0].name)).not.toBeNull();
     expect(queryByText('공유하기')).not.toBeNull();
     expect(queryByText('다른 메뉴')).not.toBeNull();
     expect(queryByText('처음으로')).not.toBeNull();
@@ -65,7 +65,7 @@ describe('ResultPage', () => {
 
     const { queryByText, queryAllByText } = renderResultPage();
 
-    expect(queryAllByText(FoodImg[0].name)).not.toBeNull();
+    expect(queryAllByText(FoodInfo[0].name)).not.toBeNull();
     expect(queryByText('공유하기')).not.toBeNull();
     expect(queryByText('다른 메뉴')).not.toBeNull();
     expect(queryByText('처음으로')).not.toBeNull();
