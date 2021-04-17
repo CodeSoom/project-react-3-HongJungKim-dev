@@ -6,14 +6,12 @@ import { MemoryRouter } from 'react-router-dom';
 
 import HomePage from './HomePage';
 
-describe('HomePage', () => {
-  it('link to start page', () => {
-    const { queryByText } = render((
-      <MemoryRouter>
-        <HomePage />
-      </MemoryRouter>
-    ));
+jest.mock('./assets/image');
 
-    expect(queryByText('MOMOJJI')).not.toBeNull();
-  });
+test('HomePage', () => {
+  render((
+    <MemoryRouter>
+      <HomePage />
+    </MemoryRouter>
+  ));
 });

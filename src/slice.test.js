@@ -3,7 +3,7 @@ import reducer, {
   updateResult,
 } from './slice';
 
-import foods from './data/foods';
+import foods from '../fixtures/foods';
 
 describe('slice', () => {
   describe('reducers', () => {

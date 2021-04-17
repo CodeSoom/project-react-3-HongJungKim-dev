@@ -27,30 +27,42 @@ describe('NextButtonsContainer', () => {
     ));
   }
 
+  beforeEach(() => {
+    mockHistoryPush.mockClear();
+  });
+
   it('renders NextButtonsContainer', () => {
     const { queryByText } = renderNextButtonsContainer(0);
 
-    expect(queryByText('다음')).not.toBeNull();
+    expect(queryByText('다음으로')).not.toBeNull();
   });
 
   it('renders NextButtonsContainer with last page', () => {
     const { queryByText } = renderNextButtonsContainer(2);
 
-    expect(queryByText('제출')).not.toBeNull();
+    expect(queryByText('제출하기')).not.toBeNull();
   });
 
-  it('click 다음', () => {
+  it('click 다음으로', () => {
     const { getByText } = renderNextButtonsContainer(0);
 
-    fireEvent.click(getByText('다음'));
+    fireEvent.click(getByText('다음으로'));
 
     expect(handleClickNext).toBeCalled();
   });
 
-  it('click 제출', () => {
+  it('click 뒤로', () => {
     const { getByText } = renderNextButtonsContainer(2);
 
-    fireEvent.click(getByText('제출'));
+    fireEvent.click(getByText('뒤로'));
+
+    expect(mockHistoryPush).toBeCalledWith('/');
+  });
+
+  it('click 제출하기', () => {
+    const { getByText } = renderNextButtonsContainer(2);
+
+    fireEvent.click(getByText('제출하기'));
 
     expect(mockHistoryPush).toBeCalledWith('/result');
   });

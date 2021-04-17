@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import styled from '@emotion/styled';
 
-import IconImg from './icons/icons';
+import { IconImg } from './assets/image';
 
 const HomeWrapper = styled.div({
   display: 'flex',
@@ -18,10 +18,12 @@ export default function HomePage() {
   return (
     <>
       <HomeWrapper>
-        <img
-          src={IconImg[0][0]}
-          alt=""
-        />
+        <Link to="/result">
+          <img
+            src={IconImg[0][0]}
+            alt=""
+          />
+        </Link>
         <Link to="/question">
           <img
             src={IconImg[0][1]}
