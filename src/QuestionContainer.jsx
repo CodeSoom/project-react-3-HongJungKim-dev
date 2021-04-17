@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import IconImg from './icons/icons';
+import { IconImg } from './assets/image';
 
 export default function QuestionContainer({
   pageId, contents, selectedAnswerIds,

@@ -35,7 +35,6 @@ export default function App() {
         <Route path="/result" component={ResultPage} />
         <Route component={NotFoundPage} />
       </Switch>
-
     </>
   );
 }

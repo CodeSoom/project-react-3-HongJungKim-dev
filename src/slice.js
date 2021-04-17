@@ -2,12 +2,17 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import foods from './data/foods';
 
+import qnas from './data/qnas';
+
 const ALL_CHOICE = 6;
 
 const { actions, reducer } = createSlice({
   name: 'application',
   initialState: {
+    qnas: [...qnas],
     id: 0,
+    resultId: 0,
+    randomId: 0,
     selectedAnswerIds: [],
     prevResults: [...foods],
     curResults: [],
@@ -38,8 +43,7 @@ const { actions, reducer } = createSlice({
         id, selectedAnswerIds,
         prevResults, curResults,
       } = state;
-
-      const to = [0, 0, clickedId - 1];
+      const to = [0, clickedId - 1, clickedId - 1];
 
       const allButtons = [1, 2, 3, 4, 5];
 
@@ -61,12 +65,32 @@ const { actions, reducer } = createSlice({
         selectedAnswerIds: [...new Set([...selectedAnswerIds, clickedId])],
       };
     },
+
+    increaseResultId(state) {
+      const { resultId } = state;
+
+      return {
+        ...state,
+        resultId: resultId + 1,
+      };
+    },
+
+    pickRandom(state) {
+      const randomId = Math.floor(Math.random() * foods.length);
+
+      return {
+        ...state,
+        randomId,
+      };
+    },
   },
 });
 
 export const {
   saveAnswer,
   updateResult,
+  increaseResultId,
+  pickRandom,
 } = actions;
 
 export default reducer;
