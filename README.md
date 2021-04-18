@@ -7,7 +7,7 @@ MOMOJJI
 여러 질문의 답을 선택하여 지금 먹고 싶은 메뉴를 찾을 수 있습니다.
 
 구현  
-![momojji](https://user-images.githubusercontent.com/58525009/115120849-8c4dba80-9fea-11eb-8000-18dc2efcacf4.gif)
+![momojji](https://user-images.githubusercontent.com/58525009/115152250-53294f00-a0ab-11eb-83f1-d7908dc811ea.gif)
 
 주소  
 https://codesoom.github.io/project-react-3-HongJungKim-dev/
