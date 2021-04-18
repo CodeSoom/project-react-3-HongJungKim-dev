@@ -12,6 +12,8 @@ import get from './utils';
 
 import { FoodImg, FoodInfo } from './assets/image';
 
+import ShareButton from './ShareButton';
+
 import Wrapper from './Wrapper';
 
 import Button from './Button';
@@ -80,7 +82,9 @@ export default function ResultPage() {
           )
       }
       <GridDiv>
-        <Button>공유하기</Button>
+        <Button>
+          <ShareButton />
+        </Button>
         {isOutOfFinalResultLen
           ? (
             <Button
