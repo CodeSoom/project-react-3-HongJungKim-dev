@@ -54,7 +54,9 @@ const { actions, reducer } = createSlice({
             ...prevResults.filter((result) => allButtons.map(
               (button) => button === result.attribute[id][to[id]],
             ))],
-          selectedAnswerIds: [...new Set([...selectedAnswerIds, ...allButtons])],
+          selectedAnswerIds: [
+            ...new Set([...selectedAnswerIds, ...allButtons]),
+          ],
         };
       }
 
@@ -62,7 +64,9 @@ const { actions, reducer } = createSlice({
         ...state,
         curResults: [...curResults,
           ...prevResults.filter((result) => result.attribute[id][to[id]] === clickedId)],
-        selectedAnswerIds: [...new Set([...selectedAnswerIds, clickedId])],
+        selectedAnswerIds: [
+          ...new Set([...selectedAnswerIds, clickedId]),
+        ],
       };
     },
 
