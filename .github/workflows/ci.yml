@@ -16,9 +16,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - name: Build
          run: |
           npm run build
-          cp index.html 404.html
+          cp dist/index.html dist/404.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
