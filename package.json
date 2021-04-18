@@ -44,18 +44,18 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack build",
-    "deploy": "gh-pages —remote upstream -d dist",
+    "deploy": "gh-pages --remote upstream -d dist",
     "test": "jest",
     "lint": "eslint --ext js,jsx ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HongJungKim-dev/project-react-3-HongJungKim-dev#readme"
+    "url": "https://github.com/HongJungKim-dev/project-react-3-HongJungKim-dev.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HongJungKim-dev/project-react-3-HongJungKim-dev/issues"
   },
-  "homepage": "https://HongJungKim-dev.github.io/project-react-3-HongJungKim-dev"
+  "homepage": "https://github.comc/HongJunKim-dev/project-react-3-HongJungKim-dev"
 }
