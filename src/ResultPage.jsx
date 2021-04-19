@@ -18,13 +18,18 @@ import Wrapper from './Wrapper';
 
 import Button from './Button';
 
-const ResetText = styled.button({
+const HomeButton = styled.button({
   fontSize: '1em',
   fontWeight: 'bold',
+  color: 'white',
   borderColor: 'transparent',
   backgroundColor: '#FFA800',
   borderRadius: '20px',
   boxShadow: '5px 5px 5px 5px #F4F4F4',
+  width: '282px',
+  height: '56px',
+  position: 'relative',
+  top: '10em',
 });
 
 const GridDiv = styled.div({
@@ -33,6 +38,9 @@ const GridDiv = styled.div({
   gridTemplateRows: '111px',
   rowGap: '1em',
   columnGap: '1em',
+  position: 'relative',
+  top: '3em',
+  fontWeight: 'bold',
 });
 
 export default function ResultPage() {
@@ -60,24 +68,28 @@ export default function ResultPage() {
           ? (
             <>
               <h1>이런 메뉴는 어때요?</h1>
-              <img
-                src={FoodImg[randomId]}
-                alt=""
-              />
-              <h1>
-                {FoodInfo[randomId].name}
-              </h1>
+              <Wrapper>
+                <img
+                  src={FoodImg[randomId]}
+                  alt=""
+                />
+                <h1>
+                  {FoodInfo[randomId].name}
+                </h1>
+              </Wrapper>
             </>
           )
           : (
             <>
-              <img
-                src={FoodImg[finalResultIdsSet[resultId] - 1]}
-                alt=""
-              />
-              <h1>
-                {FoodInfo[finalResultIdsSet[resultId] - 1].name}
-              </h1>
+              <Wrapper>
+                <img
+                  src={FoodImg[finalResultIdsSet[resultId] - 1]}
+                  alt=""
+                />
+                <h1>
+                  {FoodInfo[finalResultIdsSet[resultId] - 1].name}
+                </h1>
+              </Wrapper>
             </>
           )
       }
@@ -100,12 +112,11 @@ export default function ResultPage() {
               다른 메뉴
             </Button>
           )}
-
       </GridDiv>
       <Link to="/">
-        <ResetText>
+        <HomeButton>
           처음으로
-        </ResetText>
+        </HomeButton>
       </Link>
     </Wrapper>
   );
