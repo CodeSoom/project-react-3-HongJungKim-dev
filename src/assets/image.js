@@ -26,6 +26,7 @@ import Result2 from './image/result/result2.png';
 import Result3 from './image/result/result3.png';
 import Result4 from './image/result/result4.png';
 import Result5 from './image/result/result5.png';
+import Result6 from './image/result/result6.png';
 
 export const IconImg = {
   0: [
@@ -75,6 +76,15 @@ export const FoodInfo = [
   {
     id: 5, name: '나시고렝', img: Result5,
   },
+  {
+    id: 6, name: '감자튀김', img: Result6,
+  },
+  {
+    id: 7, name: '갈비탕', img: Result7,
+  },
+  {
+    id: 8, name: '게살스프', img: Result8,
+  },
 ];
 
 export const FoodImg = {
@@ -83,4 +93,7 @@ export const FoodImg = {
   2: Result3,
   3: Result4,
   4: Result5,
+  5: Result6,
+  6: Result7,
+  7: Result8,
 };
