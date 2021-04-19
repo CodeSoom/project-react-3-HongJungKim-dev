@@ -27,6 +27,8 @@ import Result3 from './image/result/result3.png';
 import Result4 from './image/result/result4.png';
 import Result5 from './image/result/result5.png';
 import Result6 from './image/result/result6.png';
+import Result7 from './image/result/result7.png';
+import Result8 from './image/result/result8.png';
 
 export const IconImg = {
   0: [
