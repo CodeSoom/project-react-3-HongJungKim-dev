@@ -7,9 +7,11 @@ import { useHistory } from 'react-router-dom';
 const GridDiv = styled.div({
   display: 'grid',
   gridTemplateColumns: '64px 218px',
-  gridTemplateRows: '56',
+  gridTemplateRows: '56px',
   rowGap: '1em',
   columnGap: '1em',
+  position: 'relative',
+  top: '10em',
 });
 
 const BackButton = styled.button({

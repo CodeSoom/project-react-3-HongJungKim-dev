@@ -20,6 +20,8 @@ const GridDiv = styled.div({
   gridTemplateRows: '111px 111px 111px',
   rowGap: '1em',
   columnGap: '1em',
+  position: 'relative',
+  top: '2em',
 });
 
 export default function QuestionPage() {

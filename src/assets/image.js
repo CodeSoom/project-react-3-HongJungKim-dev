@@ -1,5 +1,6 @@
 import Choice from './image/icon/choice.png';
 import Random from './image/icon/random.png';
+import Main from './image/icon/main.png';
 
 import Choice101 from './image/icon/choice101.png';
 import Choice102 from './image/icon/choice102.png';
@@ -30,6 +31,7 @@ export const IconImg = {
   0: [
     Random,
     Choice,
+    Main,
   ],
   1: [
     Choice101,

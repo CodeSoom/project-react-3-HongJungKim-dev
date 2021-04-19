@@ -5,6 +5,8 @@ const Wrapper = styled.div({
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
+  position: 'relative',
+  top: '2em',
   width: '100%',
   height: '100%',
 });

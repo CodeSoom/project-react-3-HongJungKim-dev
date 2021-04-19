@@ -6,10 +6,24 @@ import styled from '@emotion/styled';
 
 import { IconImg } from './assets/image';
 
+import Wrapper from './Wrapper';
+
+const MainWrapper = styled.div({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  position: 'relative',
+  top: '5em',
+  width: '100%',
+  height: '100%',
+});
+
 const HomeWrapper = styled.div({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  position: 'relative',
+  top: '10em',
   width: '100%',
   height: '100%',
 });
@@ -17,6 +31,12 @@ const HomeWrapper = styled.div({
 export default function HomePage() {
   return (
     <>
+      <MainWrapper>
+        <img
+          src={IconImg[0][2]}
+          alt=""
+        />
+      </MainWrapper>
       <HomeWrapper>
         <Link to="/result">
           <img
