@@ -18,10 +18,19 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run build
+<<<<<<< HEAD
+<<<<<<< HEAD
       - run: cp index.html 404.html
+=======
+      - run: cp dist/index.html dist/404.html
+>>>>>>> fb8e013 (Try to solve invalid workflow file)
+=======
+      - run: cp index.html 404.html
+>>>>>>> 8c4392d (No such file or directory issue)
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./dist

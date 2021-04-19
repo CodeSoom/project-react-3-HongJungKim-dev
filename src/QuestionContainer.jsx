@@ -7,6 +7,7 @@ import { IconImg } from './assets/image';
 const Button = styled.button(({ selected }) => ({
   fontSize: '1em',
   fontWeight: 'bold',
+  color: selected ? 'white' : '',
   borderColor: 'transparent',
   backgroundColor: selected ? '#FFA800' : 'transparent',
   borderRadius: '20px',
