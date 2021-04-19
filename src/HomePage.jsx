@@ -6,8 +6,6 @@ import styled from '@emotion/styled';
 
 import { IconImg } from './assets/image';
 
-import Wrapper from './Wrapper';
-
 const MainWrapper = styled.div({
   display: 'flex',
   justifyContent: 'center',
