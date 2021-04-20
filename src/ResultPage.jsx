@@ -29,7 +29,7 @@ const HomeButton = styled.button({
   width: '282px',
   height: '56px',
   position: 'relative',
-  top: '10em',
+  top: '5em',
 });
 
 const GridDiv = styled.div({
@@ -43,6 +43,18 @@ const GridDiv = styled.div({
   fontWeight: 'bold',
 });
 
+const ShareDiv = styled.div({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: '1em',
+  fontWeight: 'bold',
+  borderColor: 'transparent',
+  backgroundColor: 'transparent',
+  borderRadius: '20px',
+  boxShadow: '5px 5px 5px 5px #F4F4F4',
+});
+
 export default function ResultPage() {
   const dispatch = useDispatch();
 
@@ -51,7 +63,7 @@ export default function ResultPage() {
   const randomId = useSelector(get('randomId'));
 
   const len = finalResultIdsSet === undefined ? 0 : finalResultIdsSet.length;
-  const isOutOfFinalResultLen = resultId === len;
+  const isOutOfFinalResultLen = resultId === len - 1;
 
   function handleClickOther() {
     dispatch(increaseResultId());
@@ -94,9 +106,9 @@ export default function ResultPage() {
           )
       }
       <GridDiv>
-        <Button>
+        <ShareDiv>
           <ShareButton />
-        </Button>
+        </ShareDiv>
         {isOutOfFinalResultLen
           ? (
             <Button
