@@ -83,7 +83,7 @@ export default function ResultPage() {
   return (
     <Wrapper>
       {
-        isOutOfFinalResultLen
+        (isOutOfFinalResultLen === true)
           ? (
             <>
               <h1>이런 메뉴는 어때요?</h1>
@@ -116,21 +116,23 @@ export default function ResultPage() {
         <ShareDiv>
           <ShareButton />
         </ShareDiv>
-        {isOutOfFinalResultLen
-          ? (
-            <Button
-              onClick={handleClickOtherRandom}
-            >
-              다른 메뉴
-            </Button>
-          )
-          : (
-            <Button
-              onClick={handleClickOther}
-            >
-              다른 메뉴
-            </Button>
-          )}
+        {
+          (isOutOfFinalResultLen === true)
+            ? (
+              <Button
+                onClick={handleClickOtherRandom}
+              >
+                다른 메뉴
+              </Button>
+            )
+            : (
+              <Button
+                onClick={handleClickOther}
+              >
+                다른 메뉴
+              </Button>
+            )
+        }
       </GridDiv>
       <HomeButton onClick={handleClickHome}>
         처음으로
