@@ -1,15 +1,19 @@
 import React from 'react';
 
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 
 import styled from '@emotion/styled';
+
+import { useDispatch } from 'react-redux';
 
 import HomePage from './HomePage';
 import QuestionPage from './QuestionPage';
 import ResultPage from './ResultPage';
 import NotFoundPage from './NotFoundPage';
 
-const HeaderWrapper = styled.div({
+import { resetAnswer } from './slice';
+
+const HomeButtonWrapper = styled.div({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -20,24 +24,31 @@ const HeaderWrapper = styled.div({
   height: '100%',
 });
 
-const Header = styled.header({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  '& a': {
-    color: '#FFA800',
-    textDecoration: 'none',
-  },
+const HomeButton = styled.button({
+  borderColor: 'transparent',
+  backgroundColor: 'transparent',
+  color: '#FFA800',
 });
 
 export default function App() {
+  const dispatch = useDispatch();
+
+  const history = useHistory();
+
+  function handleClickHome() {
+    dispatch(resetAnswer());
+    history.push('/');
+  }
+
   return (
     <>
-      <HeaderWrapper>
-        <Header>
-          <h1><Link to="/">MOMOJJI</Link></h1>
-        </Header>
-      </HeaderWrapper>
+      <HomeButtonWrapper>
+        <HomeButton
+          onClick={handleClickHome}
+        >
+          <h1>MOMOJJI</h1>
+        </HomeButton>
+      </HomeButtonWrapper>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/question" component={QuestionPage} />

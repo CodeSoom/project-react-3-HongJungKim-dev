@@ -87,6 +87,20 @@ const { actions, reducer } = createSlice({
         randomId,
       };
     },
+
+    resetAnswer(state) {
+      return {
+        ...state,
+        qnas: [...qnas],
+        id: 0,
+        resultId: 0,
+        randomId: 0,
+        selectedAnswerIds: [],
+        prevResults: [...foods],
+        curResults: [],
+        finalResultIdsSet: [],
+      };
+    },
   },
 });
 
@@ -95,6 +109,8 @@ export const {
   updateResult,
   increaseResultId,
   pickRandom,
+  editAnswer,
+  resetAnswer,
 } = actions;
 
 export default reducer;

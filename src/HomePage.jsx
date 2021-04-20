@@ -1,10 +1,14 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import styled from '@emotion/styled';
 
+import { useDispatch } from 'react-redux';
+
 import { IconImg } from './assets/image';
+
+import { pickRandom, resetAnswer } from './slice';
 
 const MainWrapper = styled.div({
   display: 'flex',
@@ -26,7 +30,22 @@ const HomeWrapper = styled.div({
   height: '100%',
 });
 
+const RandomButton = styled.button({
+  borderColor: 'transparent',
+  backgroundColor: 'transparent',
+});
+
 export default function HomePage() {
+  const dispatch = useDispatch();
+
+  const history = useHistory();
+
+  function handleClickRandom() {
+    dispatch(resetAnswer());
+    dispatch(pickRandom());
+    history.push('/result');
+  }
+
   return (
     <>
       <MainWrapper>
@@ -36,12 +55,14 @@ export default function HomePage() {
         />
       </MainWrapper>
       <HomeWrapper>
-        <Link to="/result">
+        <RandomButton
+          onClick={handleClickRandom}
+        >
           <img
             src={IconImg[0][0]}
             alt=""
           />
-        </Link>
+        </RandomButton>
         <Link to="/question">
           <img
             src={IconImg[0][1]}

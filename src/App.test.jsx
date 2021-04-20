@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 import { MemoryRouter } from 'react-router-dom';
 
@@ -10,6 +10,14 @@ import qnas from './data/qnas';
 
 import App from './App';
 
+const mockHistoryPush = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useHistory: () => ({
+    push: mockHistoryPush,
+  }),
+}));
 jest.mock('react-redux');
 jest.mock('./assets/image');
 
@@ -37,9 +45,11 @@ describe('App', () => {
   });
 
   it('renders home page', () => {
-    const { queryByText } = renderApp({ path: '/' });
+    const { getByText } = renderApp({ path: '/' });
 
-    expect(queryByText('MOMOJJI')).not.toBeNull();
+    fireEvent.click(getByText('MOMOJJI'));
+
+    expect(mockHistoryPush).toBeCalledWith('/');
   });
 
   it('renders question page', () => {

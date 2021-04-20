@@ -3,6 +3,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+
+import { resetAnswer } from './slice';
 
 const GridDiv = styled.div({
   display: 'grid',
@@ -37,11 +40,14 @@ const NextButton = styled.button({
 export default function NextButtonsContainer({
   pageId, handleClickNext,
 }) {
+  const dispatch = useDispatch();
+
   const isLastPage = (pageId + 1) !== 3;
 
   const history = useHistory();
 
   function handleClickBackHome() {
+    dispatch(resetAnswer());
     history.push('/');
   }
 
