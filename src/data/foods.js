@@ -7,7 +7,6 @@ const foods = [
   { id: 6, attribute: [[1], [0, 2, 0, 0, 0], [1, 0, 0, 0, 0]] },
   { id: 7, attribute: [[3], [1, 0, 0, 0, 5], [0, 0, 0, 0, 5]] },
   { id: 8, attribute: [[2], [0, 2, 0, 0, 5], [0, 0, 3, 0, 0]] },
-  { id: 9, attribute: [[2], [0, 2, 0, 0, 5], [0, 0, 3, 0, 0]] },
 ];
 
 export default foods;

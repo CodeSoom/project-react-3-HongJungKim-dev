@@ -80,7 +80,7 @@ const { actions, reducer } = createSlice({
     },
 
     pickRandom(state) {
-      const randomId = Math.floor(Math.random() * foods.length);
+      const randomId = Math.floor(Math.random() * (foods.length - 1));
 
       return {
         ...state,
@@ -109,7 +109,6 @@ export const {
   updateResult,
   increaseResultId,
   pickRandom,
-  editAnswer,
   resetAnswer,
 } = actions;
 

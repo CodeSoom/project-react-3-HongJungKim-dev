@@ -53,7 +53,7 @@ describe('ResultPage', () => {
     }));
   });
 
-  it('go to home', () => {
+  it('goes to home', () => {
     const { getByText } = renderResultPage();
 
     fireEvent.click(getByText('처음으로'));
