@@ -11,7 +11,7 @@ const MainWrapper = styled.div({
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  top: '5em',
+  top: '3em',
   width: '100%',
   height: '100%',
 });
@@ -21,7 +21,7 @@ const HomeWrapper = styled.div({
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  top: '10em',
+  top: '8em',
   width: '100%',
   height: '100%',
 });

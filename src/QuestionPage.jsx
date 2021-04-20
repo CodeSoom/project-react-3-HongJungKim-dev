@@ -21,7 +21,7 @@ const GridDiv = styled.div({
   rowGap: '1em',
   columnGap: '1em',
   position: 'relative',
-  top: '2em',
+  top: '.5em',
 });
 
 export default function QuestionPage() {

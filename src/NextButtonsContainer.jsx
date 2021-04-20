@@ -11,7 +11,7 @@ const GridDiv = styled.div({
   rowGap: '1em',
   columnGap: '1em',
   position: 'relative',
-  top: '10em',
+  top: '3em',
 });
 
 const BackButton = styled.button({

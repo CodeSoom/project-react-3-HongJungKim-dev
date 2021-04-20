@@ -9,26 +9,35 @@ import QuestionPage from './QuestionPage';
 import ResultPage from './ResultPage';
 import NotFoundPage from './NotFoundPage';
 
-import Wrapper from './Wrapper';
+const HeaderWrapper = styled.div({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',
+  position: 'relative',
+  top: '.5em',
+  width: '100%',
+  height: '100%',
+});
+
+const Header = styled.header({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  '& a': {
+    color: '#FFA800',
+    textDecoration: 'none',
+  },
+});
 
 export default function App() {
-  const Header = styled.header({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    '& a': {
-      color: '#FFA800',
-      textDecoration: 'none',
-    },
-  });
-
   return (
     <>
-      <Wrapper>
+      <HeaderWrapper>
         <Header>
           <h1><Link to="/">MOMOJJI</Link></h1>
         </Header>
-      </Wrapper>
+      </HeaderWrapper>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/question" component={QuestionPage} />
