@@ -18,6 +18,14 @@ import { pickRandom, increaseResultId } from './slice';
 
 import { FoodInfo } from './assets/image';
 
+const mockHistoryPush = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useHistory: () => ({
+    push: mockHistoryPush,
+  }),
+}));
 jest.mock('react-redux');
 jest.mock('./assets/image');
 
@@ -43,6 +51,14 @@ describe('ResultPage', () => {
       resultId: given.resultId,
       randomId: given.randomId,
     }));
+  });
+
+  it('go to home', () => {
+    const { getByText } = renderResultPage();
+
+    fireEvent.click(getByText('처음으로'));
+
+    expect(mockHistoryPush).toBeCalledWith('/');
   });
 
   it('renders ResultPage when `isOutOfFinalResultLen`', () => {

@@ -2,11 +2,11 @@ import React from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import styled from '@emotion/styled';
 
-import { increaseResultId, pickRandom } from './slice';
+import { increaseResultId, pickRandom, resetAnswer } from './slice';
 
 import get from './utils';
 
@@ -56,6 +56,8 @@ const ShareDiv = styled.div({
 });
 
 export default function ResultPage() {
+  const history = useHistory();
+
   const dispatch = useDispatch();
 
   const finalResultIdsSet = useSelector(get('finalResultIdsSet'));
@@ -63,7 +65,7 @@ export default function ResultPage() {
   const randomId = useSelector(get('randomId'));
 
   const len = finalResultIdsSet === undefined ? 0 : finalResultIdsSet.length;
-  const isOutOfFinalResultLen = resultId === len - 1;
+  const isOutOfFinalResultLen = resultId === len - 1 || len === 0;
 
   function handleClickOther() {
     dispatch(increaseResultId());
@@ -71,6 +73,11 @@ export default function ResultPage() {
 
   function handleClickOtherRandom() {
     dispatch(pickRandom());
+  }
+
+  function handleClickHome() {
+    dispatch(resetAnswer());
+    history.push('/');
   }
 
   return (
@@ -125,11 +132,9 @@ export default function ResultPage() {
             </Button>
           )}
       </GridDiv>
-      <Link to="/">
-        <HomeButton>
-          처음으로
-        </HomeButton>
-      </Link>
+      <HomeButton onClick={handleClickHome}>
+        처음으로
+      </HomeButton>
     </Wrapper>
   );
 }
