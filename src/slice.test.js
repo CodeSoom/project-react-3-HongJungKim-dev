@@ -32,35 +32,39 @@ describe('slice', () => {
     });
 
     describe('saveAnswer', () => {
-      it('saves answer when select all buttons', () => {
-        const initialState = {
-          id: 0,
-          selectedAnswerIds: [],
-          prevResults: [...foods],
-          curResults: [],
-          finalResultIdsSet: [],
-        };
+      context('when select all buttons', () => {
+        it('saves answer', () => {
+          const initialState = {
+            id: 0,
+            selectedAnswerIds: [],
+            prevResults: [...foods],
+            curResults: [],
+            finalResultIdsSet: [],
+          };
 
-        const state = reducer(initialState, saveAnswer(6));
-        const { curResults, selectedAnswerIds } = state;
+          const state = reducer(initialState, saveAnswer(6));
+          const { curResults, selectedAnswerIds } = state;
 
-        expect(curResults).toHaveLength(9);
-        expect(selectedAnswerIds).toHaveLength(5);
+          expect(curResults).toHaveLength(9);
+          expect(selectedAnswerIds).toHaveLength(5);
+        });
       });
 
-      it('saves answer when select buttons', () => {
-        const initialState = {
-          id: 0,
-          selectedAnswerIds: [],
-          prevResults: [...foods],
-          curResults: [],
-          finalResultIdsSet: [],
-        };
+      context('when select buttons', () => {
+        it('saves answer', () => {
+          const initialState = {
+            id: 0,
+            selectedAnswerIds: [],
+            prevResults: [...foods],
+            curResults: [],
+            finalResultIdsSet: [],
+          };
 
-        const state = reducer(initialState, saveAnswer(3));
+          const state = reducer(initialState, saveAnswer(3));
 
-        expect(state.curResults).toHaveLength(2);
-        expect(state.selectedAnswerIds).toHaveLength(1);
+          expect(state.curResults).toHaveLength(2);
+          expect(state.selectedAnswerIds).toHaveLength(1);
+        });
       });
     });
 
