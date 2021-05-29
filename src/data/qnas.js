@@ -19,7 +19,7 @@ const qnas = [
       question: '재료는?',
       answers: [
         { id: 1, description: '밥' },
-        { id: 2, description: '빵/튀김/전' },
+        { id: 2, description: '빵/튀김\n/전' },
         { id: 3, description: '면' },
         { id: 4, description: '떡/분식' },
         { id: 5, description: '육류/생선' },
@@ -32,11 +32,11 @@ const qnas = [
     contents: {
       question: '맛은?',
       answers: [
-        { id: 1, description: '혈관 살찌는 느끼한 맛' },
-        { id: 2, description: '내장 파괴 매운맛' },
+        { id: 1, description: '혈관 살찌는\n 느끼한 맛' },
+        { id: 2, description: '내장 파괴\n 매운맛' },
         { id: 3, description: '뜨끈~한 맛' },
-        { id: 4, description: '달달/단짠' },
-        { id: 5, description: '상큼/시원한 맛' },
+        { id: 4, description: '달달/\n단짠 맛' },
+        { id: 5, description: '상큼/\n시원한 맛' },
         { id: 6, description: '모두' },
       ],
     },
