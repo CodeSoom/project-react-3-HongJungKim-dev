@@ -45,7 +45,7 @@ describe('slice', () => {
           const state = reducer(initialState, saveAnswer(6));
           const { curResults, selectedAnswerIds } = state;
 
-          expect(curResults).toHaveLength(9);
+          expect(curResults).toHaveLength(8);
           expect(selectedAnswerIds).toHaveLength(5);
         });
       });
