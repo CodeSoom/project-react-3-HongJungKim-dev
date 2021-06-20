@@ -8,7 +8,7 @@
 
 ## 구현
 
-![momojji](https://user-images.githubusercontent.com/58525009/117241144-6723cd80-ae6d-11eb-9a50-45b7e998aad4.gif)
+![momojji](https://user-images.githubusercontent.com/58525009/122689502-e58dd080-d25d-11eb-9f1e-db17acbdcae1.gif)
 
 ## 설명
 
